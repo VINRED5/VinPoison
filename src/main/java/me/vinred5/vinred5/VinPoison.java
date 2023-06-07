@@ -1,12 +1,15 @@
 package me.vinred5.vinred5;
 
+import net.kyori.adventure.text.Component;
+import org.bukkit.Bukkit;
+import org.bukkit.Color;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class VinPoison extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        Bukkit.getServer().getConsoleSender().sendMessage(Component.text(Color.BLUE + "Плагин включился"));
 
     }
 
