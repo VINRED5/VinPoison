@@ -1,0 +1,7 @@
+name: VinPoison
+version: '${project.version}'
+main: me.vinred5.vinred5.VinPoison
+api-version: 1.19
+authors: [VINRED5]
+description: My test plugin
+website: vk.com/vinred5
