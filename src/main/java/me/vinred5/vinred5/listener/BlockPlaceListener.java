@@ -28,27 +28,27 @@ public class BlockPlaceListener implements Listener {
             );
             blockInfo.forEach(s -> player.sendMessage(Component.text(instance.color(s))));
             if (block.getType() == Material.CAMPFIRE) {
-                checkCampfire(block, player);
-            } else if (block.getType() == Material.CAULDRON) {
                 checkCauldron(block, player);
+            } else if (block.getType() == Material.CAULDRON) {
+                checkCampfire(block, player);
             }
         }
     }
 
-    public void checkCampfire(Block block, Player player) {
+    public void checkCauldron(Block block, Player player) {
         Location loc = block.getLocation().add(0, 1, 0);
         Material checkCauldron = loc.getBlock().getType();
         if (checkCauldron == Material.CAULDRON) {
-            List<String> yes = Collections.singletonList("&dУсловие выполнено: над костром находиться котёл");
+            List<String> yes = Collections.singletonList("&bУсловие выполнено: над костром находиться котёл");
             yes.forEach(s -> player.sendMessage(Component.text(instance.color(s))));
         }
     }
 
-    public void checkCauldron(Block block, Player player) {
+    public void checkCampfire(Block block, Player player) {
         Location loc = block.getLocation().add(0, -1, 0);
         Material checkCampfire = loc.getBlock().getType();
         if (checkCampfire == Material.CAMPFIRE) {
-            List<String> yes = Collections.singletonList("&dУсловие выполнено: под котлом находиться костёр");
+            List<String> yes = Collections.singletonList("&bУсловие выполнено: под котлом находиться костёр");
             yes.forEach(s -> player.sendMessage(Component.text(instance.color(s))));
         }
     }
