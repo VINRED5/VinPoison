@@ -4,13 +4,10 @@ import me.vinred5.vinred5.listener.BlockPlaceListener;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Color;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static java.awt.Color.GREEN;
 
 public final class VinPoison extends JavaPlugin {
 
