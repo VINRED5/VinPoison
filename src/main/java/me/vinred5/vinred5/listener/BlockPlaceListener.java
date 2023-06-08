@@ -22,7 +22,7 @@ public class BlockPlaceListener implements Listener {
 
         if (event.canBuild() && !event.isCancelled()) {
             List<String> blockInfo = Arrays.asList(
-                    "&fВы установили блок: " + block,
+                    "&fВы установили блок: &e" + block,
                     "&fКоординаты: " + block.getLocation().getX() + ", " + block.getLocation().getY() + ", " + block.getLocation().getZ()
             );
 
