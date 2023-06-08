@@ -9,7 +9,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class BlockPlaceListener implements Listener {
